@@ -1,0 +1,54 @@
+<HTML !DOCTYPE>
+  <html>
+    <head>
+      <title>Form page FreeCodeCamp</title>
+       <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+      <h1 id="title">Survey Form</h1>
+      <div class="container">
+        <p id="description">Let us know how we can improve freeCodeCamp</p>
+     
+      <form id="survey-form">
+        <div class="form-row">
+            <label  id="name-label" for="name" >* Name: </label>
+            <input name="name" id="name" type="text" placeholder="Enter your name">
+            </input>
+        </div>
+        <div class="form-row">
+            <label id="email-label" for="email">* Email: </label>
+            <input name="email" id="email" type="email" placeholder="Enter your email">
+            </input>
+        </div> 
+        <div class="form-row">
+          <label id="number-label" for="number">*Age: </label>
+          <input name="number" id="number" type="number" placeholder="Enter your age" min="1" max="120">
+          </input>  
+        </div>
+        <div class="form-row">
+          <label for="dropdown">Which option best describes your current role?
+          </label>
+          <select id="dropdown">
+            <option disabled value="">Select an option</option>
+            <option value="Student">Student</option>
+            <option value="fullTimeJob">Full Time Job</option>
+            <option value="Learner">Full Time Learner</option>
+            <option value="noSay">Prefer not to say</option>
+            <option value="other">Other</option>
+          </select>
+          <div class="empty"></div>
+        </div>
+        <div class="form-row">
+          <label id="radio-label" for="radio">*How likely is that you would recommend freeCodeCamp to a friend? </label>
+          <div id="radio" >
+          <input name="radio" type="radio" value="Definitely">Definitetly
+          </input> 
+          </div>
+        </div> 
+        
+      </form>
+     </div>
+    </body>
+  </html>
+
+
