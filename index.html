@@ -1,8 +1,8 @@
 <HTML !DOCTYPE>
   <html>
     <head>
-      <title>Form page FreeCodeCamp</title>
-       <link rel="stylesheet" type="text/css" href="style.css">
+      <link rel="stylesheet" type="text/css" href="style.css">
+      <title></title>
     </head>
     <body>
       <h1 id="title">Survey Form</h1>
@@ -38,14 +38,99 @@
           </select>
           <div class="empty"></div>
         </div>
-        <div class="form-row">
+    
+    <div class="row">
+        <div class="col-left">
           <label id="radio-label" for="radio">*How likely is that you would recommend freeCodeCamp to a friend? </label>
-          <div id="radio" >
-          <input name="radio" type="radio" value="Definitely">Definitetly
-          </input> 
-          </div>
+        </div>
+      <div class="col-right">
+          <input id="def" name="radio" type="radio" value="Definitely">Definitetly</input>   
+      <input id="def" name="radio" type="radio" value="Definitely">Maybe</input> 
+     <input id="def" name="radio" type="radio" value="Definitely">Not Sure</input>
         </div> 
-        
+        </div>
+
+<div class="form-row">
+          <label for="dropdown">What do you like most in FCC?
+          </label>
+          <select id="dropdown">
+            <option value="Select" disabled selected>Select an option</option>
+            <option value="Student">Challenges</option>
+            <option value="fullTimeJob">Projects</option>
+            <option value="Learner">Community</option>
+            <option value="noSay">Open Source</option>
+          </select>
+          <div class="empty"></div>
+        </div>
+
+<div class="form-row">
+          <label for="comments">Any Comments or Suggestions? </label>
+          <textarea name="textarea" id="comments" placeholder="Enter your text here..."></textarea>  
+        </div>
+
+<a href="#" id="submit" type="submit">Submit</a>
+
+<div class="cont">
+  <div class="cont-left">Things that should be improved in the future
+(Check all that apply):</div>
+  <div class="cont-right">
+    <div>
+    <input type="checkbox" id="scales" name="scales"
+         checked>
+  <label for="scales">Front-end Projects</label>
+    </div>
+    <div>
+    <input type="checkbox" id="scales" name="scales"
+         >
+  <label for="scales">Back-end Projects</label>
+      </div>
+    <div>
+    <input type="checkbox" id="scales" name="scales"
+         >
+  <label for="scales">Data Visualization</label>
+      </div>
+    <div>
+    <input type="checkbox" id="scales" name="scales"
+         >
+  <label for="scales">Challenges</label>
+      </div>
+    <div>
+    <input type="checkbox" id="scales" name="scales"
+         >
+  <label for="scales">Open Source Community</label>
+      </div>
+    <div>
+    <input type="checkbox" id="scales" name="scales"
+         >
+  <label for="scales">Gitter help rooms</label>
+      </div>
+    <div>
+    <input type="checkbox" id="scales" name="scales"
+         >
+  <label for="scales">Videos</label>
+      </div>
+    <div>
+    <input type="checkbox" id="scales" name="scales"
+         >
+  <label for="scales">City Meetups</label>
+      </div>
+    <div>
+    <input type="checkbox" id="scales" name="scales"
+         >
+  <label for="scales">Wiki</label>
+      </div>
+    <div>
+    <input type="checkbox" id="scales" name="scales"
+         >
+  <label for="scales">Forum</label>
+      </div>
+    <div>
+    <input type="checkbox" id="scales" name="scales"
+         >
+  <label for="scales">Additional Courses</label>
+      </div>
+  </div>
+</div>
       </form>
      </div>
     </body>

@@ -1,3 +1,8 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
 body {
   background-color: #a9d7d1;
   font-family: 'Arial', sans-serif;
@@ -20,6 +25,7 @@ body {
   padding: 10px;
   padding-top: 20px;
   max-width: 900px;
+  padding-bottom: 40px;
 }
 
 #survey-form {
@@ -36,31 +42,102 @@ body {
 }
 
 .form-row label {
+  display: flex;
+  justify-content: flex-end;
   padding-top: 10px ;
   padding-bottom: 10px;
   padding-right: 10px;
   flex: 1;
-  text-align: right;
+  
 }
 
+.form-row textarea, 
 .form-row input {
+  display: flex;
+  justify-content: flex-start;
   flex: 1;
   padding: 10px ;
 }
 
-.form-row select, .empty {
+.form-row select, .empty  {
   flex: 0.5;
   padding: 10px;
   padding-right: 0;
 }
-
-#radio {
-  flex: 1;
-  margin: 10px 10px 10px 0px;
+.row {
+ display: flex;
+ justify-content: center;
+ 
+  
+  margin: 0 auto;
+  margin: 20px;
+}
+.col-left {
+  display: flex;
+  justify-content: flex-end;
+  flex:1;
+  border: 1px solid blue;
+  padding-top: 10px ;
+  padding-bottom: 10px;
+  padding-right: 10px;
+}
+.col-right {
+  display: flex;
+  flex-direction: column;
+  
+  
+  flex:1;
   border: 1px solid green;
+ padding-right: 20px;
+}
+
+.col-right input, 
+{
+  margin-right: 0px;
+  margin-top: 2px;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.wrap {
+  flex-wrap: wrap;
+  text-align: right;
+}
+#submit {
+  background-color: #59ace0;
+  border-radius: 4px;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+}
+.de {
+  display: inline-block;
+}
+
+.col-right {
+  
   text-align: left;
 }
-#radio-label {
-  padding-right: 20px;
 
+.cont {
+  border: 1px solid purple;
+  margin: 20px;
+  display: flex;
+  justify-content: center;
 }
+.cont-left {
+  flex: 1;
+  text-align: right;
+  background: blue;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.cont-right {
+  background: orange;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  align-items: flex-start;
+}
+.
