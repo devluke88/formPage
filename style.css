@@ -7,14 +7,17 @@ body {
   background-color: #a9d7d1;
   font-family: 'Arial', sans-serif;
   text-align: center;
+  padding: 10px;
 }
 
 #title {
   text-align: center;
+  margin-bottom: 20px;
+  margin-top: 10px;
 }
 
 #description {
-  display: block;
+  padding: 20px 0px;
 }
 
 .container {
@@ -23,9 +26,8 @@ body {
   background-color: rgb(250 ,250 ,250);
   border-radius: 4px;
   padding: 10px;
-  padding-top: 20px;
   max-width: 900px;
-  padding-bottom: 40px;
+  padding-top: 20px;
 }
 
 #survey-form {
@@ -34,110 +36,76 @@ body {
 }
 
 .form-row {
-  display: flex;
-  border: 1px solid red;
-  align-items: center;
-  margin: 20px;
-  justify-content: center;
+  text-align: center;
 }
 
-.form-row label {
-  display: flex;
-  justify-content: flex-end;
-  padding-top: 10px ;
-  padding-bottom: 10px;
-  padding-right: 10px;
-  flex: 1;
-  
-}
-
-.form-row textarea, 
-.form-row input {
-  display: flex;
-  justify-content: flex-start;
-  flex: 1;
-  padding: 10px ;
-}
-
-.form-row select, .empty  {
-  flex: 0.5;
-  padding: 10px;
-  padding-right: 0;
-}
-.row {
- display: flex;
- justify-content: center;
- 
-  
-  margin: 0 auto;
-  margin: 20px;
-}
-.col-left {
-  display: flex;
-  justify-content: flex-end;
-  flex:1;
-  border: 1px solid blue;
-  padding-top: 10px ;
-  padding-bottom: 10px;
-  padding-right: 10px;
-}
-.col-right {
-  display: flex;
-  flex-direction: column;
-  
-  
-  flex:1;
-  border: 1px solid green;
- padding-right: 20px;
-}
-
-.col-right input, 
-{
-  margin-right: 0px;
-  margin-top: 2px;
-  justify-content: flex-start;
-  align-items: flex-start;
-}
-
-.wrap {
-  flex-wrap: wrap;
+.labels {
+  display: inline-block;
   text-align: right;
+  padding: 5px;
+  width: 40%;
+  vertical-align: top;
+  margin-top: 10px;
 }
+ 
+.right-column {
+  display: inline-block;
+  text-align: left;
+  vertical-align: middle;
+  width: 48%;
+}
+
+input, select {
+  height: 30px;
+  border-radius: 2px;
+  padding: 5px;
+  margin: 10px;
+}
+
+input {
+   width: 280px;
+}
+
+#dropdown {
+  height: 35px;
+  width: 140px;
+  padding: 5px;
+  margin: 10px;
+  margin-top: 15px;
+  border-radius: 2px;
+}
+
+#radio {
+  width: 15px;
+  vertical-align: middle;
+}
+  
+#comments {
+  height: 50px;
+  width: 280px;
+  padding: 5px;
+  margin: 10px;
+  border-radius: 2px;
+}
+
+#checkbox {
+  width: 15px; 
+  vertical-align: middle;
+}
+
+.button {
+  margin: 10px;
+}
+
 #submit {
   background-color: #59ace0;
   border-radius: 4px;
   color: white;
   padding: 10px 20px;
   text-decoration: none;
-}
-.de {
-  display: inline-block;
+  margin: 10px;
 }
 
-.col-right {
-  
-  text-align: left;
-}
 
-.cont {
-  border: 1px solid purple;
-  margin: 20px;
-  display: flex;
-  justify-content: center;
-}
-.cont-left {
-  flex: 1;
-  text-align: right;
-  background: blue;
-  display: flex;
-  justify-content: flex-end;
-}
 
-.cont-right {
-  background: orange;
-  display: flex;
-  flex-direction: column;
-  flex: 1;
-  align-items: flex-start;
-}
-.
+
